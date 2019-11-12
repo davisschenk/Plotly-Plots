@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import numpy as np
 
-data = pd.read_csv("all.csv")
+data = pd.read_csv("data/Ford/all.csv")
 national_prices = data[data["Where"] == "National"]["Price"].to_numpy()
 local_prices = data[data["Where"] == "Local"]["Price"].to_numpy()
 longmont_prices = data[data["Where"] == "Longmont"]["Price"].to_numpy()

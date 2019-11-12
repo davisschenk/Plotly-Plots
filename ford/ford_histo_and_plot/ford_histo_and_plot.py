@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import numpy as np
 from scipy import stats
-data = pd.read_csv("all.csv")
+data = pd.read_csv("data/Ford/all.csv")
 
 fig = px.histogram(data, x="Price", color="Where", marginal="box", histnorm="percent")
 fig.update_layout(
