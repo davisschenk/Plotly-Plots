@@ -1,5 +1,7 @@
 from scipy.stats import binom
 import plotly.graph_objects as go
+import plotly.figure_factory as ff
+
 
 more = [binom.pmf(x, 100, 0.7186) for x in range(100)]
 less = [binom.pmf(x, 100, 0.2814) for x in range(100)]
@@ -30,3 +32,5 @@ fig.update_layout(
 )
 fig.show()
 fig.write_html("ford_binomial_prob.html")
+
+
