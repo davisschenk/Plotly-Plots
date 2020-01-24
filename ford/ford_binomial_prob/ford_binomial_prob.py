@@ -23,7 +23,7 @@ fig.add_trace(
 )
 
 fig.update_layout(
-    title="Ford F150 Binomial PDF out of 100",
+    title="data F150 Binomial PDF out of 100",
     xaxis_title="N (Number of F150s)",
     yaxis_title="Probability",
     yaxis=dict(
