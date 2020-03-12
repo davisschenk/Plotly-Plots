@@ -14,5 +14,13 @@ fig.update_traces(meanline_visible=True,
                   opacity=0.95
                   )
 
+fig.update_layout(
+    title="Effects of Dissonance on Solving a Multiplication Problem",
+    yaxis_title="Seconds to Complete Problem",
+    xaxis_title="Treatment",
+    showlegend=False
+)
+
+
 fig.write_html(r"C:\Users\davis\Documents\GitHub\Plotly-Plots\dissonance_project\box_plot\box_plot.html")
 
