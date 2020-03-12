@@ -1,5 +1,5 @@
 import plotly.graph_objects as go
-from dissonance_project.data import with_dissonance, without_dissonance
+from dissonance_project.data import without_dissonance
 
 fig = go.Figure()
 fig.add_trace(go.Histogram(x=without_dissonance, marker_color='#31394d', nbinsy=10, nbinsx=10))
